@@ -1,0 +1,8 @@
+// require('./index.html')
+require('./css/estilos.css')
+require('./images/logo.png')
+require('./images/hero.jpg')
+require('./images/platzi-video-react-native.png')
+require('./images/platzi-conf.jpg')
+require('./images/platzi.png')
+console.log("hellow world", new Date())
