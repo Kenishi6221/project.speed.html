@@ -13,8 +13,9 @@ const webpackConfiguration = {
         path: path.resolve(__dirname, "dist")
     },
     devServer: {
+        host: '192.168.0.7',
         compress: true,
-        inline: true
+        inline: true,
     },
     module: {
         rules: [
@@ -34,6 +35,12 @@ const webpackConfiguration = {
                             name: "/images/[name].[ext]"
                         }
                     }
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
                 ]
             }
         ]
