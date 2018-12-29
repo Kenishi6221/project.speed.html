@@ -5,8 +5,8 @@
   "author": "Kenishi <j.ardila1087@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "webpackserver": "webpack-dev-server --config webpack.config.js --progress --open",
-    "webpack": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.config.js --progress --open",
+    "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
