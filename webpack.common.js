@@ -1,21 +1,15 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-const webpackConfiguration = {
-    mode: 'development',
+module.exports = {
     entry: [
         path.resolve(__dirname, "index.js")
     ],
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "dist")
-    },
-    devServer: {
-        host: '192.168.0.7',
-        compress: true,
-        inline: true,
     },
     module: {
         rules: [
@@ -56,5 +50,3 @@ const webpackConfiguration = {
         }),
     ]
 }
-
-module.exports = webpackConfiguration
