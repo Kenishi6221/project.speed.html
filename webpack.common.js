@@ -1,7 +1,6 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
     entry: [
@@ -13,13 +12,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader"
-                ]
-            },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
@@ -41,10 +33,6 @@ module.exports = {
     },
     plugins: [
         new cleanWebpackPlugin('dist'),
-        new MiniCssExtractPlugin({
-            filename: "/css/estilos.css",
-            chunkFilename: "[id].css"
-        }),
         new htmlWebpackPlugin({
             template: "./index.html",
         }),

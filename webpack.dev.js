@@ -8,6 +8,17 @@ const webpackConfiguration = merge(common, {
         host: '192.168.0.6',
         compress: true,
         inline: true,
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ],
+            }
+        ]
     }
 })
 
