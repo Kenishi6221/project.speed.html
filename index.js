@@ -1,4 +1,4 @@
-// require('./css/estilos.css')
+require('./css/estilos.css')
 require('./images/logo.png')
 require('./images/hero.jpg')
 require('./images/platzi-video-react-native.png')
