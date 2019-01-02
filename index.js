@@ -2,7 +2,7 @@ require('./css/estilos.css')
 require('./images/logo.png')
 require('./images/hero.png')
 require('./images/platzi-video-react-native.png')
-require('./images/platzi-conf.jpg')
+require('./images/conf.png')
 require('./images/platzi.png')
 require('./js/menu')
 
