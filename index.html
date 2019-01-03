@@ -337,11 +337,15 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="./css/main.9ad99a5ff577a7c97142.css">
-  <link rel="stylesheet" href="./css/estilos-desktop.aa6837c7b2bab1afe4d6.css" media="screen and (max-width:1023px)">
-  <link rel="stylesheet" href="./css/estilos-media.b335162fb03f0513a1e5.css" media="screen and (max-width:480px)">
-  <link rel="stylesheet" href="./css/estilos-small.e1ed45e14fc74e19c74d.css" media="screen and (max-width:320px)">
-  <link rel="stylesheet" href="./css/estilos-tablet.eb61833ea46fe32c665a.css" media="screen and (max-width:767px)">
+  <link rel="preload" as="style" href="/css/main.924b84c57965c3f26d35.css" onload='this.rel="stylesheet"'>
+  <link rel="preload" as="style" href="/css/estilos-desktop.aa6837c7b2bab1afe4d6.css" onload='this.rel="stylesheet"'
+    media="screen and (max-width: 1023px)">
+  <link rel="preload" as="style" href="/css/estilos-media.b335162fb03f0513a1e5.css" onload='this.rel="stylesheet"'
+    media="screen and (max-width:480px)">
+  <link rel="preload" as="style" href="/css/estilos-small.e1ed45e14fc74e19c74d.css" onload='this.rel="stylesheet"'
+    media="screen and (max-width:320px)">
+  <link rel="preload" as="style" href="/css/estilos-tablet.eb61833ea46fe32c665a.css" onload='this.rel="stylesheet"'
+    media="screen and (max-width:767px)">
 </head>
 
 <body>
@@ -427,7 +431,8 @@
           <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut saepe
             provident, voluptas commodi nesciunt dolores ipsa qui doloremque, eveniet vel fuga id expedita laudantium
             porro doloribus sunt. Deleniti, commodi.</p>
-          <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank" rel="noopener">Ver
+            Plática</a>
         </div>
       </article>
       <article class="event">
@@ -443,12 +448,13 @@
           <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis
             doloremque possimus, facilis magnam ex dolorem mollitia! Molestiae molestias velit vero ea dolores. Cumque
             quod sapiente veritatis commodi, exercitationem totam?</p>
-          <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank" rel="noopener">Ver
+            Plática</a>
         </div>
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" src="images/conf.png" width="500" />
+          <img class="event-image" async="on" src="images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -459,7 +465,7 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" src="images/conf.png" width="500" />
+          <img class="event-image" async="on" src="images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -488,7 +494,7 @@
   <footer class="footer">
     <div class="container">
       <div>
-        <p>Practicas front-end 2018<img src="images/platzi.png" width="80" alt="platzi"></p>
+        <p>Practicas front-end 2018<img async="on" src="images/platzi.png" width="80" alt="platzi"></p>
       </div>
       <div>
         <p>
@@ -497,8 +503,8 @@
       </div>
     </div>
   </footer>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-  <script src="./js/menu.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="preload" as="style" onload='this.rel="stylesheet"'>
+  <script defer="defer" src="main.924b84c57965c3f26d35.js"></script>
 </body>
 
 </html>
