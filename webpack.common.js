@@ -7,7 +7,7 @@ module.exports = {
         path.resolve(__dirname, "index.js")
     ],
     output: {
-        filename: "[name].js",
+        filename: "[name].[hash].js",
         path: path.resolve(__dirname, "dist")
     },
     module: {
@@ -28,13 +28,31 @@ module.exports = {
                 use: [
                     'file-loader'
                 ]
+            },
+            {
+                test: /\.hbs$/,
+                use: [
+                    'handlebars-loader'
+                ]
             }
         ]
     },
     plugins: [
         new cleanWebpackPlugin('dist'),
         new htmlWebpackPlugin({
-            template: "./index.html",
+            template: "./index.hbs",
+            minify: {
+                removeComments: true,
+                // collapseWhitespace: true,
+                removeRedundantAttributes: true,
+                useShortDoctype: true,
+                removeEmptyAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                keepClosingSlash: true,
+                minifyJS: true,
+                minifyCSS: true,
+                minifyURLs: true,
+            },
         }),
     ]
 }

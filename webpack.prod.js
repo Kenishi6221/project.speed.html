@@ -1,8 +1,10 @@
 const merge = require('webpack-merge')
 const common = require('./webpack.common')
 const TerserPlugin = require('terser-webpack-plugin')
+const MediaQueryPlugin = require('media-query-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
+
 const webpackConfiguration = merge(common,
     {
         mode: 'production',
@@ -13,7 +15,8 @@ const webpackConfiguration = merge(common,
                     test: /\.(sa|sc|c)ss$/,
                     use: [
                         MiniCssExtractPlugin.loader,
-                        'css-loader'
+                        'css-loader',
+                        MediaQueryPlugin.loader
                     ],
                 }
             ]
@@ -24,7 +27,20 @@ const webpackConfiguration = merge(common,
                 // both options are optional
                 filename: '/css/[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
-            })
+            }),
+            new MediaQueryPlugin(
+                {
+                    include: [
+                        'estilos'
+                    ],
+                    queries: {
+                        'screen and (max-width: 1023px)': 'desktop',
+                        'screen and (max-width:767px)': 'tablet',
+                        'screen and (max-width:480px)': 'media',
+                        'screen and (max-width:320px)': 'small'
+                    }
+                }
+            )
         ],
         optimization: {
             minimizer: [
