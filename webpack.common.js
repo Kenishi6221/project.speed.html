@@ -41,6 +41,7 @@ module.exports = {
         new cleanWebpackPlugin('dist'),
         new htmlWebpackPlugin({
             template: "./index.hbs",
+            inject: false,
             minify: {
                 removeComments: true,
                 // collapseWhitespace: true,
