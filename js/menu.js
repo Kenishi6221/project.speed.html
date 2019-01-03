@@ -13,7 +13,7 @@ function validation(event) {
     }
 }
 
-function toggleMemu() {
+const toggleMemu = () => {
     const menu = document.querySelector(".menu")
     menu.classList.toggle('is-active')
 }
