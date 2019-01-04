@@ -7,7 +7,7 @@ module.exports = {
         path.resolve(__dirname, "index.js")
     ],
     output: {
-        filename: "[name].[hash].js",
+        filename: "./src/js/[name].[hash].js",
         path: path.resolve(__dirname, "dist")
     },
     module: {
@@ -18,7 +18,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: "/assets/images/[name].[ext]"
+                            name: "/src/assets/images/[name].[ext]"
                         }
                     }
                 ]
@@ -29,7 +29,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '/assets/fonts/[name].[ext]'
+                            name: '/src/assets/fonts/[name].[ext]'
                         }
                     }
                 ]
