@@ -18,7 +18,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: "/images/[name].[ext]"
+                            name: "/assets/images/[name].[ext]"
                         }
                     }
                 ]
@@ -29,7 +29,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'fonts/[name].[ext]'
+                            name: '/assets/fonts/[name].[ext]'
                         }
                     }
                 ]
@@ -39,13 +39,23 @@ module.exports = {
                 use: [
                     'handlebars-loader'
                 ]
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     },
     plugins: [
         new cleanWebpackPlugin('dist'),
         new htmlWebpackPlugin({
-            template: "./index.hbs",
+            template: "./src/index.hbs",
             inject: false,
             minify: {
                 removeComments: true,
