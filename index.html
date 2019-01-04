@@ -8,6 +8,7 @@
   <style>
     @font-face {
       font-family: icomoon;
+      font-display: swap;
       src: url(src/assets/fonts/icomoon.eot?tc7q2y);
       src: url(src/assets/fonts/icomoon.eot?tc7q2y#iefix) format('embedded-opentype'), url(src/assets/fonts/icomoon.ttf?tc7q2y) format('truetype'), url(src/assets/fonts/icomoon.woff?tc7q2y) format('woff'), url(src/assets/fonts/icomoon.svg?tc7q2y#icomoon) format('svg');
       font-weight: 400;
@@ -337,14 +338,14 @@
       }
     }
   </style>
-  <link async rel="subresource" as="style" href="./src/css/main.a7c871b40d7fca6662a3.css" onload='this.rel="stylesheet"'>
-  <link async rel="subresource" as="style" href="./src/css/estilos-desktop.aa6837c7b2bab1afe4d6.css" onload='this.rel="stylesheet"'
+  <link async rel="preload" as="style" href="./src/css/main.e1e852ff345827a8fbc5.css" onload='this.rel="stylesheet"'>
+  <link async rel="preload" as="style" href="./src/css/estilos-desktop.aa6837c7b2bab1afe4d6.css" onload='this.rel="stylesheet"'
     media="screen and (max-width: 1023px)">
-  <link async rel="subresource" as="style" href="./src/css/estilos-media.b335162fb03f0513a1e5.css" onload='this.rel="stylesheet"'
+  <link async rel="preload" as="style" href="./src/css/estilos-media.b335162fb03f0513a1e5.css" onload='this.rel="stylesheet"'
     media="screen and (max-width:480px)">
-  <link async rel="subresource" as="style" href="./src/css/estilos-small.e1ed45e14fc74e19c74d.css" onload='this.rel="stylesheet"'
+  <link async rel="preload" as="style" href="./src/css/estilos-small.e1ed45e14fc74e19c74d.css" onload='this.rel="stylesheet"'
     media="screen and (max-width:320px)">
-  <link async rel="subresource" as="style" href="./src/css/estilos-tablet.eb61833ea46fe32c665a.css" onload='this.rel="stylesheet"'
+  <link async rel="preload" as="style" href="./src/css/estilos-tablet.eb61833ea46fe32c665a.css" onload='this.rel="stylesheet"'
     media="screen and (max-width:767px)">
 </head>
 
@@ -454,7 +455,7 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" async="on" src="./src/assets/images/conf.png" width="500" />
+          <img class="event-image lazy" data-src="./src/assets/images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -465,7 +466,7 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" async="on" src="./src/assets/images/conf.png" width="500" />
+          <img class="event-image lazy" data-src="./src/assets/images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -494,7 +495,7 @@
   <footer class="footer">
     <div class="container">
       <div>
-        <p>Practicas front-end 2018<img async="on" src="./src/assets/images/platzi.png" width="80" alt="platzi"></p>
+        <p>Practicas front-end 2018<img class="lazy" data-src="./src/assets/images/platzi.png" width="80" alt="platzi"></p>
       </div>
       <div>
         <p>
@@ -504,6 +505,7 @@
     </div>
   </footer>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="preload" as="style" onload='this.rel="stylesheet"'>
+  <script defer="defer" src="./src/js/lazyLoadImages.js"></script>
   <script defer="defer" src="./src/js/menu.js"></script>
 </body>
 
