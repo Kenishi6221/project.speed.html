@@ -55,7 +55,7 @@ module.exports = {
     plugins: [
         new cleanWebpackPlugin('dist'),
         new htmlWebpackPlugin({
-            template: "./src/index.hbs",
+            template: "./index.hbs",
             inject: false,
             minify: {
                 removeComments: true,

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+  <link rel="icon" type="image/png" href="./src/assets/images/favicon.png" />
   <style>
-    @font-face{font-family:'icomoon';src:url('./fonts/icomoon.eot?tc7q2y');src:url('./fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),url('./fonts/icomoon.ttf?tc7q2y') format('truetype'),url('./fonts/icomoon.woff?tc7q2y') format('woff'),url('./fonts/icomoon.svg?tc7q2y#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Source Sans Pro',system-ui;margin:0}h1,h2,h3,h6{font-family:'Fjalla One',system-ui;font-weight:normal}h1{font-size:40px;max-width:500px;line-height:1.5;letter-spacing:-.2px;color:white;margin:0}h1 strong{color:#026fff}h2{color:#026fff;text-transform:uppercase;font-family:'Source Sans Pro',system-ui;font-weight:bold;font-size:24px;margin-bottom:40px}.hero{height:300px;background-color:#1b2127;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.hero-image{object-fit:cover}.portfolio{background-color:#fafafa;padding:20px}.project{border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;background-color:white;display:flex;align-items:center;justify-content:space-between;box-shadow:3px 5px 33px#888888;flex-wrap:wrap}.project-course,.project-date,.project-url{margin:10px 0}.project-description{font-size:20px}.project strong{font-family:'Fjalla One',system-ui}.project-title{font-size:30px;margin:0 0 10px 0}.project-details{width:50%}.project-imageContainer{width:50%}.project-imageContainer img{max-width:100%}.header{background-color:#1b2127;color:white;display:flex;flex-wrap:wrap;height:70px;align-items:center;justify-content:space-between}ol{margin:0;padding:0;list-style:none}figure{margin:0}.menu{height:inherit}.header ol{display:flex;height:inherit}.header ol li{height:inherit}.header a{color:white;text-decoration:none;height:inherit;display:flex;align-items:center;padding:0 10px}.container{max-width:1000px;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit;flex:1}.burger-button{display:none;color:white;position:fixed;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background-color:rgba(0,0,0,0.8);z-index:4;left:5px;top:5px}@media screen and (max-width:1023px){.portfolio{padding:0}.container{padding:0 1em}.hero{height:auto;padding:2em;position:relative;overflow:hidden}.hero-image{position:absolute;z-index:1;width:100%;left:0;right:0;top:0;bottom:0}h1{font-size:2em;z-index:2}}@media screen and (max-width:767px){h2{font-size:1.2em;margin:.5em 0}.header{display:block;height:auto}.header ol{display:block}.header ol li{height:50px}.header a{justify-content:center}.header .logo{text-align:center}.project{display:block}.project-imageContainer{width:auto;text-align:center}.project-details{width:auto;font-size:16px}.project-title{font-size:1.5em;margin-bottom:0.3em}.project-url{font-size:1em}.project-course{font-size:0.7em}.project-description{font-size:1em}.project-course,.project-date,.project-url{margin:0.4em 0}.burger-button{display:block}.menu{position:fixed;background-color:rgba(5,11,255,.9);left:-100vw;top:0;bottom:0;z-index:3;width:100vw;display:flex;align-items:center;justify-content:center}.header a{display:flex;align-items:center;height:inherit;padding:0 10px}}@media screen and (max-width:480px){.project-details{width:auto;font-size:14px}h1{font-size:1.5em}}@media screen and (max-width:320px){.hero{padding:2em 1em;background:rgba(0,0,0,0.5)}h1{font-size:1.2em}}
+    @font-face{font-family:'icomoon';src:url('./src/assets/fonts/icomoon.eot?tc7q2y');src:url('./src/assets/fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),url('./src/assets/fonts/icomoon.ttf?tc7q2y') format('truetype'),url('./src/assets/fonts/icomoon.woff?tc7q2y') format('woff'),url('./src/assets/fonts/icomoon.svg?tc7q2y#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Source Sans Pro',system-ui;margin:0}h1,h2,h3,h6{font-family:'Fjalla One',system-ui;font-weight:normal}h1{font-size:40px;max-width:500px;line-height:1.5;letter-spacing:-.2px;color:white;margin:0}h1 strong{color:#026fff}h2{color:#026fff;text-transform:uppercase;font-family:'Source Sans Pro',system-ui;font-weight:bold;font-size:24px;margin-bottom:40px}.hero{height:300px;background-color:#1b2127;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.hero-image{object-fit:cover}.portfolio{background-color:#fafafa;padding:20px}.project{border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;background-color:white;display:flex;align-items:center;justify-content:space-between;box-shadow:3px 5px 33px#888888;flex-wrap:wrap}.project-course,.project-date,.project-url{margin:10px 0}.project-description{font-size:20px}.project strong{font-family:'Fjalla One',system-ui}.project-title{font-size:30px;margin:0 0 10px 0}.project-details{width:50%}.project-imageContainer{width:50%}.project-imageContainer img{max-width:100%}.header{background-color:#1b2127;color:white;display:flex;flex-wrap:wrap;height:70px;align-items:center;justify-content:space-between}ol{margin:0;padding:0;list-style:none}figure{margin:0}.menu{height:inherit}.header ol{display:flex;height:inherit}.header ol li{height:inherit}.header a{color:white;text-decoration:none;height:inherit;display:flex;align-items:center;padding:0 10px}.container{max-width:1000px;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit;flex:1}.burger-button{display:none;color:white;position:fixed;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background-color:rgba(0,0,0,0.8);z-index:4;left:5px;top:5px}@media screen and (max-width:1023px){.portfolio{padding:0}.container{padding:0 1em}.hero{height:auto;padding:2em;position:relative;overflow:hidden}.hero-image{position:absolute;z-index:1;width:100%;left:0;right:0;top:0;bottom:0}h1{font-size:2em;z-index:2}}@media screen and (max-width:767px){h2{font-size:1.2em;margin:.5em 0}.header{display:block;height:auto}.header ol{display:block}.header ol li{height:50px}.header a{justify-content:center}.header .logo{text-align:center}.project{display:block}.project-imageContainer{width:auto;text-align:center}.project-details{width:auto;font-size:16px}.project-title{font-size:1.5em;margin-bottom:0.3em}.project-url{font-size:1em}.project-course{font-size:0.7em}.project-description{font-size:1em}.project-course,.project-date,.project-url{margin:0.4em 0}.burger-button{display:block}.menu{position:fixed;background-color:rgba(5,11,255,.9);left:-100vw;top:0;bottom:0;z-index:3;width:100vw;display:flex;align-items:center;justify-content:center}.header a{display:flex;align-items:center;height:inherit;padding:0 10px}}@media screen and (max-width:480px){.project-details{width:auto;font-size:14px}h1{font-size:1.5em}}@media screen and (max-width:320px){.hero{padding:2em 1em;background:rgba(0,0,0,0.5)}h1{font-size:1.2em}}
   </style>
   {{# each htmlWebpackPlugin.files.css }}
   <link async rel="subresource" as="style" href=".{{ this }}" onload="this.rel='stylesheet'">
@@ -21,7 +21,7 @@
   <header class="header">
     <div class="container">
       <figure class="logo">
-        <img src="./assets/images/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
+        <img src="./src/assets/images/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
       </figure>
       <nav class="menu">
         <ol>
@@ -43,7 +43,7 @@
       <h1>
         Hola! Soy <strong>Jose Ardila.</strong> <br /> Desarrollador <strong>Full Stack</strong>
       </h1>
-      <img class="hero-image" src="./assets/images/hero.png" width="500" height="300" alt="imagen principal del sitio">
+      <img class="hero-image" src="./src/assets/images/hero.png" width="500" height="300" alt="imagen principal del sitio">
     </div>
   </section>
   <section id="portafolio" class="portfolio">
@@ -60,7 +60,7 @@
             magni assumenda ea, blanditiis voluptatem!</p>
         </div>
         <figure class="project-imageContainer">
-          <img class="project-image" src="./assets/images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+          <img class="project-image" src="./src/assets/images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
         </figure>
       </article>
       <article class="project">
@@ -74,7 +74,7 @@
             cumque esse temporibus. Tempore, eum esse!</p>
         </div>
         <figure class="project-imageContainer">
-          <img class="project-image" width="500" src="./assets/images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+          <img class="project-image" width="500" src="./src/assets/images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
         </figure>
       </article>
     </div>
@@ -122,7 +122,7 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" async=on src="./assets/images/conf.png" width="500" />
+          <img class="event-image" async=on src="./src/assets/images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -133,7 +133,7 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-          <img class="event-image" async=on src="./assets/images/conf.png" width="500" />
+          <img class="event-image" async=on src="./src/assets/images/conf.png" width="500" />
         </figure>
         <div class="event-detail">
           <h3 class="event-title">Element</h3>
@@ -162,7 +162,7 @@
   <footer class="footer">
     <div class="container">
       <div>
-        <p>Practicas front-end 2018<img async=on src="./assets/images/platzi.png" width="80" alt="platzi"></p>
+        <p>Practicas front-end 2018<img async=on src="./src/assets/images/platzi.png" width="80" alt="platzi"></p>
       </div>
       <div>
         <p>
