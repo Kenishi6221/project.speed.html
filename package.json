@@ -5,8 +5,9 @@
   "author": "Kenishi <j.ardila1087@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --progress --open",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --progress --open",
+    "dev:speed": "webpack-dev-server --config ./webpack.local.test.speed.js --progress --open",
+    "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

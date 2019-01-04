@@ -2,13 +2,17 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
 
+let cleanOptions = {
+    root: path.resolve(__dirname, '../')
+}
+
 module.exports = {
     entry: [
-        path.resolve(__dirname, "index.js")
+        path.resolve(__dirname, "../index.js")
     ],
     output: {
         filename: "./src/js/[name].[hash].js",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "../dist")
     },
     module: {
         rules: [
@@ -53,7 +57,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new cleanWebpackPlugin('dist'),
+        new cleanWebpackPlugin('dist', cleanOptions),
         new htmlWebpackPlugin({
             template: "./index.hbs",
             inject: false,
