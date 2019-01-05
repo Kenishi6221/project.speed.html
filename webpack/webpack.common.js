@@ -2,8 +2,6 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
 
-
-
 let cleanOptions = {
     root: path.resolve(__dirname, '../'),
     exclude: ['estilos.css', 'lazyLoadImages.js', 'menu.js'],
@@ -25,13 +23,15 @@ const commonConfiguration = env => {
     console.log('relative paths', pathsToClean)
 
     console.log("outuput path is... ", outuputPath)
+
     return {
         entry: [
             path.resolve(__dirname, "../index.js")
         ],
         output: {
-            filename: "./src/js/[name].[hash].js",
-            path: path.resolve(__dirname, outuputPath)
+            filename: "src/js/[name].[hash].js",
+            path: path.resolve(__dirname, outuputPath),
+            publicPath: './'
         },
         module: {
             rules: [
