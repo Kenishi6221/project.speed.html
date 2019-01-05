@@ -246,6 +246,35 @@ figure {
   background-size: 50px 50px;
 }
 
+.social-link.twitter.lazy {
+  background-image: none;
+  background-color: blue;
+}
+.social-link.facebook.lazy {
+  background-image: none;
+  background-color: blue;
+}
+.social-link.github.lazy {
+  background-image: none;
+  background-color: blue;
+}
+.social-link.instagram.lazy {
+  background-image: none;
+  background-color: blue;
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: none;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
 .social-link.twitter {
   background-image: url('../assets/images/twitter.svg');
 }
