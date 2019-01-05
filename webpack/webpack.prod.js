@@ -25,9 +25,8 @@ const webpackConfiguration = env => {
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // both options are optional
-                filename: '/src/css/[name].[hash].css',
+                filename: 'src/css/[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
-                publicPath: '/'
             }),
             new MediaQueryPlugin(
                 {
