@@ -276,13 +276,13 @@ figure {
 }
 
 .social-link.twitter {
-  background-image: url('./../assets/images/twitter.svg');
+  background-image: url('./.././assets/images/twitter.svg');
 }
 .social-link.facebook {
-  background-image: url('.././assets/images/facebook.svg');
+  background-image: url(../assets/images/facebook.svg);
 }
 .social-link.github {
-  background-image: url('/src/assets/images/github.svg');
+  background-image: url('/./src/assets/images/github.svg');
 }
 .social-link.instagram {
   background-image: url('../../src/assets/images/instagram.svg');
@@ -294,7 +294,7 @@ figure {
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('.././assets/images/envelope.svg');
+  background-image: url(/src/assets/images/envelope.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;

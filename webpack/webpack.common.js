@@ -14,10 +14,10 @@ const commonConfiguration = env => {
     console.log('relative to root', relativeToRoot)
 
     let pathsToClean = [
-        'dist',
-        `${relativeToRoot}/src/css`,
-        `${relativeToRoot}/src/js`,
-        `${relativeToRoot}/*.html`
+        // `${relativeToRoot}/src/css`,
+        // `${relativeToRoot}/src/js`,
+        // `${relativeToRoot}/*.html`,
+        'dist'
     ]
 
     console.log('relative paths', pathsToClean)
@@ -29,18 +29,19 @@ const commonConfiguration = env => {
             path.resolve(__dirname, "../index.js")
         ],
         output: {
-            filename: "./src/js/[name].[hash].js",
+            filename: "src/js/[name].[hash].js",
             path: path.resolve(__dirname, outuputPath),
+            publicPath: "./"
         },
         module: {
             rules: [
                 {
-                    test: /\.(png|svg|jpg|gif)$/,
+                    test: /.*\.(png|svg|jpg|gif)$/i,
                     use: [
                         {
                             loader: 'file-loader',
                             options: {
-                                name: "/src/assets/images/[name].[ext]"
+                                name: "./src/assets/images/[name].[ext]"
                             }
                         }
                     ]
@@ -51,7 +52,8 @@ const commonConfiguration = env => {
                         {
                             loader: 'file-loader',
                             options: {
-                                name: '/src/assets/fonts/[name].[ext]'
+                                name: '/src/assets/fonts/[name].[ext]',
+                                publicPath: './'
                             }
                         }
                     ]

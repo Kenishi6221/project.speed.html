@@ -27,7 +27,7 @@ const webpackConfiguration = env => {
                 // both options are optional
                 filename: '/src/css/[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
-                publicPath: '../'
+                publicPath: '/'
             }),
             new MediaQueryPlugin(
                 {
