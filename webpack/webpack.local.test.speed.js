@@ -5,8 +5,9 @@ const MediaQueryPlugin = require('media-query-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
-const webpackConfiguration = merge(common,
-    {
+const webpackConfiguration = env => {
+
+    const localTestSpeedConfiguration = {
         mode: 'development',
         devtool: 'source-map',
         mode: 'development',
@@ -60,6 +61,9 @@ const webpackConfiguration = merge(common,
             ]
         },
     }
-)
+
+    const commonConfiguration = common(env)
+    return merge(commonConfiguration, localTestSpeedConfiguration)
+}
 
 module.exports = webpackConfiguration
