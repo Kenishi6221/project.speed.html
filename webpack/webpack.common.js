@@ -2,12 +2,28 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
 
+
+
 let cleanOptions = {
-    root: path.resolve(__dirname, '../')
+    root: path.resolve(__dirname, '../'),
+    exclude: ['estilos.css', 'lazyLoadImages.js', 'menu.js'],
 }
 
 const commonConfiguration = env => {
     const outuputPath = env && env.outuputPath || "../dist"
+
+    const relativeToRoot = outuputPath.replace('../', './')
+    console.log('relative to root', relativeToRoot)
+
+    let pathsToClean = [
+        'dist',
+        `${relativeToRoot}/src/css`,
+        `${relativeToRoot}/src/js`,
+        `${relativeToRoot}/*.html`
+    ]
+
+    console.log('relative paths', pathsToClean)
+
     console.log("outuput path is... ", outuputPath)
     return {
         entry: [
@@ -60,7 +76,7 @@ const commonConfiguration = env => {
             ]
         },
         plugins: [
-            new cleanWebpackPlugin('dist', cleanOptions),
+            new cleanWebpackPlugin(pathsToClean, cleanOptions),
             new htmlWebpackPlugin({
                 template: "./index.hbs",
                 inject: false,
