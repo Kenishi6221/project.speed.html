@@ -14,9 +14,9 @@ const commonConfiguration = env => {
     console.log('relative to root', relativeToRoot)
 
     let pathsToClean = [
-        // `${relativeToRoot}/src/css`,
-        // `${relativeToRoot}/src/js`,
-        // `${relativeToRoot}/*.html`,
+        `${relativeToRoot}/src/css`,
+        `${relativeToRoot}/src/js`,
+        `${relativeToRoot}/*.html`,
         'dist'
     ]
 
