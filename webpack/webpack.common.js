@@ -31,7 +31,7 @@ const commonConfiguration = env => {
         output: {
             filename: "src/js/[name].[hash].js",
             path: path.resolve(__dirname, outuputPath),
-            publicPath: './'
+            publicPath: '/'
         },
         module: {
             rules: [
