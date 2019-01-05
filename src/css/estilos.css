@@ -263,7 +263,7 @@ figure {
   background-color: blue;
 }
 
-.form-email input {
+.form-email.lazy input {
   border-color: gray;
   border-style: solid;
   border-radius: 5px;
