@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url(./speed/src/assets/fonts/icomoon.eot);
-  src:  url(./speed/src/assets/fonts/icomoon.eot#iefix) format('embedded-opentype'),
-  url(./speed/src/assets/fonts/icomoon.ttf) format('truetype'),
-  url(./speed/src/assets/fonts/icomoon.woff) format('woff'),
-  url(./speed/src/assets//src/assets/images/icomoon.svg#icomoon) format('svg');
+  src:  url(./speed/src/assets/images/icomoon.eot);
+  src:  url(./speed/src/assets/images/icomoon.eot#iefix) format('embedded-opentype'),
+  url(./speed/src/assets/images/icomoon.ttf) format('truetype'),
+  url(./speed/src/assets/images/icomoon.woff) format('woff'),
+  url(./speed/src/assets/images/icomoon.svg#icomoon) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -276,16 +276,16 @@ figure {
 }
 
 .social-link.twitter {
-  background-image: url(./speed/src/assets//src/assets/images/twitter.svg);
+  background-image: url(./speed/src/assets/images/twitter.svg);
 }
 .social-link.facebook {
-  background-image: url('/speed/src/assets/images/facebook.svg');
+  background-image: url(./speed/src/assets/images/facebook.svg);
 }
 .social-link.github {
-  background-image: url('/speed/src/assets/images/github.svg');
+  background-image: url(./speed/src/assets/images/github.svg);
 }
 .social-link.instagram {
-  background-image: url('/speed/src/assets/images/instagram.svg');
+  background-image: url(./speed/src/assets/images/instagram.svg);
 }
 
 
@@ -294,7 +294,7 @@ figure {
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('/speed/src/assets/images/envelope.svg');
+  background-image: url(./speed/src/assets/images/envelope.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -369,4 +369,4 @@ figure {
   top:5px;
 }
 
-/*# sourceMappingURL=main.71c2b4bd64b39d28e146.css.map*/
+/*# sourceMappingURL=main.060417c1c8769c3691da.css.map*/
