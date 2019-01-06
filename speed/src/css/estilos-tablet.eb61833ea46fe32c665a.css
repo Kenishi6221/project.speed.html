@@ -1,0 +1,87 @@
+
+
+@media screen and (max-width:767px){
+  h2{
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+        .header{
+          display: block;
+          height: auto;
+          }
+          .header ol{
+            display:block;
+          }
+          .header ol li{
+            height: 50px;
+          }
+          .header a{
+            justify-content: center;
+          }
+          .header .logo {
+            text-align: center;
+          }
+          .project{
+            display: block;
+          }
+          .project-imageContainer{
+            width: auto;
+            text-align: center;
+          }
+          .project-details{
+            width: auto;
+            font-size: 16px;
+          }
+          .project-title{
+              font-size: 1.5em;
+              margin-bottom: 0.3em;
+          }
+          .project-url{
+            font-size: 1em;
+          }
+          .project-course{
+            font-size: 0.7em;
+          }
+          .project-description{
+            font-size: 1em;
+          }
+          .project-course, .project-date, .project-url {
+            margin: 0.4em 0;
+        }
+        .event{
+          width: auto;
+          flex-shrink: initial;
+        }
+        .event img{
+          width: 100%;
+        }
+        .burger-button{
+          display: block;
+        }
+
+        .menu {
+          position: fixed;
+          background-color: rgba(5,11,255,.9);
+          left: -100vw;
+          top:0;
+          bottom: 0;
+          z-index: 3;
+          width: 100vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s;
+        }
+
+        .menu.is-active {
+          left: 0;
+        }
+
+        .header a {
+          display: flex;
+          align-items: center;
+          height: inherit;
+          padding: 0 10px;
+        }
+}
+/*# sourceMappingURL=estilos-tablet.eb61833ea46fe32c665a.css.map*/
