@@ -282,10 +282,10 @@ figure {
   background-image: url(./speed/src/assets/images/facebook.svg);
 }
 .social-link.github {
-  background-image: url(./speed/src/assets/images/github.svg);
+  background-image: url(/speed/src/assets/images/github.svg);
 }
 .social-link.instagram {
-  background-image: url(./speed/src/assets/images/instagram.svg);
+  background-image: url('/speed/assets/images/instagram.svg');
 }
 
 
@@ -369,4 +369,4 @@ figure {
   top:5px;
 }
 
-/*# sourceMappingURL=main.060417c1c8769c3691da.css.map*/
+/*# sourceMappingURL=main.51c602b84d8ca6bcf998.css.map*/
