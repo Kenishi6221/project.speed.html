@@ -342,7 +342,7 @@
   <link async rel="preload" as="style" href="{{ this }}" onload="this.rel='stylesheet'">
   {{/ each }}
   {{# each htmlWebpackPlugin.files.extracted.css }}
-  <link async rel="preload" as="style" href=".{{ this.file }}" onload="this.rel='stylesheet'" media="{{ this.query }}">
+  <link async rel="preload" as="style" href="{{ this.file }}" onload="this.rel='stylesheet'" media="{{ this.query }}">
   {{/ each }}
 </head>
 
