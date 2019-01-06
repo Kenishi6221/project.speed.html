@@ -276,7 +276,7 @@ figure {
 }
 
 .social-link.twitter {
-  background-image: url('/speed/src/assets/images/twitter.svg');
+  background-image: url(./speed/src/assets//src/assets/images/twitter.svg);
 }
 .social-link.facebook {
   background-image: url('/speed/src/assets/images/facebook.svg');
@@ -369,4 +369,4 @@ figure {
   top:5px;
 }
 
-/*# sourceMappingURL=main.670efad2ea4f8e0db9c2.css.map*/
+/*# sourceMappingURL=main.71c2b4bd64b39d28e146.css.map*/
