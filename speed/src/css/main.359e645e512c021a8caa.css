@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url(./speed/src/assets/images/icomoon.eot);
-  src:  url(./speed/src/assets/images/icomoon.eot#iefix) format('embedded-opentype'),
-  url(./speed/src/assets/images/icomoon.ttf) format('truetype'),
-  url(./speed/src/assets/images/icomoon.woff) format('woff'),
-  url(./speed/src/assets/images/icomoon.svg#icomoon) format('svg');
+  src:  url(/speed/src/assets/fonts/icomoon.eot?tc7q2y);
+  src:  url(/speed/src/assets/fonts/icomoon.eot?tc7q2y#iefix) format('embedded-opentype'),
+  url(/speed/src/assets/fonts/icomoon.ttf?tc7q2y) format('truetype'),
+  url(/speed/src/assets/fonts/icomoon.woff?tc7q2y) format('woff'),
+  url(/speed/src/assets/fonts/icomoon.svg?tc7q2y#icomoon) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -369,4 +369,4 @@ figure {
   top:5px;
 }
 
-/*# sourceMappingURL=main.2d37e3b9c3aef3fdb823.css.map*/
+/*# sourceMappingURL=main.359e645e512c021a8caa.css.map*/
