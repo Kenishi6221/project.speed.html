@@ -49,7 +49,7 @@ const webpackConfiguration = env => {
                     parallel: true,
                     sourceMap: true // set to true if you want JS source maps
                 }),
-                new OptimizeCSSAssetsPlugin({})
+                //new OptimizeCSSAssetsPlugin({})
             ]
         },
     }

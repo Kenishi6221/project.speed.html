@@ -1,15 +1,18 @@
+const path = require('path')
 const merge = require('webpack-merge')
 const common = require('./webpack.common')
 
 const webpackConfiguration = env => {
-    const commonConfiguration = common(env)
+
     const devConfiguration = {
         mode: 'development',
         devtool: 'inline-source-map',
         devServer: {
-            host: '192.168.0.6',
+            host: '192.168.0.7',
             compress: true,
             inline: true,
+            publicPath: '/',
+            //contentBase: path.join(__dirname, '/speed/'),
         },
         module: {
             rules: [
@@ -24,6 +27,7 @@ const webpackConfiguration = env => {
         }
     }
 
+    const commonConfiguration = common(env)
     return merge(commonConfiguration, devConfiguration)
 }
 

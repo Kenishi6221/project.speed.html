@@ -6,8 +6,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack/webpack.dev.js --progress --open",
-    "dev:speed": "webpack-dev-server --config ./webpack/webpack.local.test.speed.js --progress --open",
-    "ghp": "webpack --env.outuputPath='../' --config ./webpack/webpack.prod.js",
     "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "devDependencies": {

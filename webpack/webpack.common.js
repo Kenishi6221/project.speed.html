@@ -2,28 +2,19 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const cleanWebpackPlugin = require('clean-webpack-plugin')
 
+const relativePosition = '../'
+const folderOutuput = "speed"
+const outuputPath = `${relativePosition}${folderOutuput}`
+
+let pathsToClean = [
+    folderOutuput
+]
+
 let cleanOptions = {
-    root: path.resolve(__dirname, '../'),
-    exclude: ['estilos.css', 'lazyLoadImages.js', 'menu.js'],
+    root: path.resolve(__dirname, relativePosition)
 }
 
-const commonConfiguration = env => {
-    const outuputPath = env && env.outuputPath || "../dist"
-
-    const relativeToRoot = outuputPath.replace('../', './')
-    console.log('relative to root', relativeToRoot)
-
-    let pathsToClean = [
-        `${relativeToRoot}/src/css`,
-        `${relativeToRoot}/src/js`,
-        `${relativeToRoot}/*.html`,
-        'dist'
-    ]
-
-    console.log('relative paths', pathsToClean)
-
-    console.log("outuput path is... ", outuputPath)
-
+const commonConfiguration = () => {
     return {
         entry: [
             path.resolve(__dirname, "../index.js")
@@ -31,7 +22,7 @@ const commonConfiguration = env => {
         output: {
             filename: "src/js/[name].[hash].js",
             path: path.resolve(__dirname, outuputPath),
-            publicPath: "./"
+            publicPath: "./speed"
         },
         module: {
             rules: [
@@ -41,7 +32,9 @@ const commonConfiguration = env => {
                         {
                             loader: 'file-loader',
                             options: {
-                                name: "./src/assets/images/[name].[ext]"
+                                name: "src/assets/images/[name].[ext]",
+                                useRelativePath: true,
+                                publicPath: './speed/'
                             }
                         }
                     ]
@@ -52,8 +45,8 @@ const commonConfiguration = env => {
                         {
                             loader: 'file-loader',
                             options: {
-                                name: '/src/assets/fonts/[name].[ext]',
-                                publicPath: './'
+                                name: "src/assets/images/[name].[ext]",
+                                publicPath: './speed/'
                             }
                         }
                     ]
