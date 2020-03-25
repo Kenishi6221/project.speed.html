@@ -5,7 +5,7 @@ const webpackConfiguration = merge(common, {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        host: '192.168.0.6',
+        host: '0.0.0.0',
         compress: true,
         inline: true,
     },
