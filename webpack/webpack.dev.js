@@ -8,7 +8,7 @@ const webpackConfiguration = env => {
         mode: 'development',
         devtool: 'inline-source-map',
         devServer: {
-            host: '192.168.0.7',
+            host: '0.0.0.0',
             compress: true,
             inline: true,
             publicPath: '/',
