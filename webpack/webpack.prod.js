@@ -5,8 +5,8 @@ const MediaQueryPlugin = require('media-query-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
-const webpackConfiguration = merge(common,
-    {
+const webpackConfiguration = env => {
+    const webpackProdConfiguration = {
         mode: 'production',
         devtool: 'source-map',
         module: {
@@ -25,7 +25,7 @@ const webpackConfiguration = merge(common,
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // both options are optional
-                filename: '/css/[name].[hash].css',
+                filename: 'src/css/[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
             }),
             new MediaQueryPlugin(
@@ -49,10 +49,13 @@ const webpackConfiguration = merge(common,
                     parallel: true,
                     sourceMap: true // set to true if you want JS source maps
                 }),
-                new OptimizeCSSAssetsPlugin({})
+                //new OptimizeCSSAssetsPlugin({})
             ]
         },
     }
-)
+
+    const commonConfiguration = common(env)
+    return merge(commonConfiguration, webpackProdConfiguration)
+}
 
 module.exports = webpackConfiguration
